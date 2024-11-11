@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Establece como HTML5 -->
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el diseño para adaptarse al ancho del dispositivo, para diseño responsive -->
+    <title>Bella Web</title> <!-- Título que se muestra en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a una hoja de estilos CSS personalizada -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Enlace a la hoja de estilos de Bootstrap para diseño y estilos rápidos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <!-- Se coloca certificación de CSS -->
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+           <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="¡CSS Válido!">
+        </a>
+     </p> 
+    <!-- Encabezado de la página -->
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Bella Web</h1> <!-- Título principal de la página -->
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Links de navegación -->
+            <a class="navbar-brand" href="#">Inicio</a>
+            <a class="navbar-brand" href="#about">Sobre Nosotros</a>
+            <a class="navbar-brand" href="#services">Servicios</a>
+            <a class="navbar-brand" href="#contact">Contáctanos</a>
+        </div>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <main class="container mt-5">
+        <!-- Sección 'Sobre Nosotros' -->
+        <section id="about" class="row mb-4">
+            <div class="col-md-6">
+                <h2>Sobre Nosotros</h2>
+                <br>
+                <br>
+                <p style="text-align: justify;">Nos enfocamos en impulsar el emprendimiento de mujeres cabeza de familia en situaciones de vulnerabilidad, y que 
+                    además hayan sido víctimas del conflicto armado, es una respuesta necesaria y urgente ante la realidad socioeconómica 
+                    de muchas comunidades en contextos de postconflicto. Estas mujeres, que cargan con la responsabilidad de sustentar a 
+                    sus familias, enfrentan múltiples barreras que impiden su desarrollo económico y social. La creación de una aplicación 
+                    móvil o web que facilite la comercialización de sus productos no solo responde a estas barreras, sino que también ofrece 
+                    una solución innovadora y sostenible para su empoderamiento y bienestar.
+                </p>
+                <p style="text-align: justify;">Con el auge de la digitalización y el comercio electrónico, surge una oportunidad única para superar algunas de estas 
+                    barreras. Las aplicaciones móviles y plataformas de comercio digital pueden ofrecer a las mujeres emprendedoras un 
+                    acceso directo al mercado, herramientas de gestión de ventas y una red de apoyo que promueva su empoderamiento 
+                    económico. A través de estas tecnologías, es posible facilitar la visibilidad de sus productos, optimizar el proceso 
+                    de venta y brindarles un canal de comunicación más directo con sus clientes y colaboradores.
+                    <br>
+                    <br>
+                    Para mas información sobre este tema dar clic 
+                    <a href="https://www.reconcolombia.org/empoderamiento-economico-femenino-desde-el-emprendimiento-social/" target="_blank">AQUI</a>
+                </p>
+                <!-- Imagen sobre el contenido de la tienda -->
+                <div class="col-md-6">
+                    <img src="Imagenes/Tiendas.png" alt="" aria-hidden="true" class="img-fluid"> 
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Imagen de inicio de Bella -->
+                <img src="Imagenes/InicioBella.png" alt="" aria-hidden="true" class="img-fluid">
+            </div>
+        </section>
+
+        <!-- Sección de servicios -->
+        <section id="services" class="row mb-4">
+            <div class="col-md-6">
+                <h2>Nuestros Servicios</h2>
+                <ul>
+                    <!-- Lista de servicios proporcionados -->
+                    <li>Capacitación en marketing</li>
+                    <br>
+                    <li>Herramientas de gestión</li>
+                    <br>
+                    <li>Acceso a redes de apoyo</li>
+                    <br>
+                    <li>Programar y gestionar la venta de sus productos</li>
+                    <br>
+                    <li>Seleccionar métodos de promoción adecuados</li>
+                    <br>
+                    <li>Acceder a recursos de formación para mejorar sus habilidades empresariales</li>
+                    <br>
+                    <li>Espacio de comunidad donde las emprendedoras pueden intercambiar experiencias y apoyo mutuo</li>   
+                    <br> 
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <!-- Video Pitch -->
+                <video src="Videos/PitchBella.mp4" controls class="img-fluid"></video>
+            </div>
+        </section>
+
+        <!-- Sección de beneficios con tabla -->
+        <section id="table" class="row mb-4">
+            <h2>Beneficios de Trabajar con Bella App</h2>
+            <!-- Tabla que lista los servicios y sus descripciones -->
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Servicio</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Capacitación</td>
+                        <td>Ofrecemos cursos en línea</td>
+                    </tr>
+                    <tr>
+                        <td>Red de Apoyo</td>
+                        <td>Conectamos a mujeres emprendedoras</td>
+                    </tr>
+                    <tr>
+                        <td>Investigación aplicada</td>
+                        <td>Tenemos expertos en desarrollo social y asesores en gestión empresarial</td>
+                    </tr>
+                    <tr>
+                        <td>Facilidad de uso</td>
+                        <td>Acceso sencillo a mercados y formación continua</td>
+                    </tr>
+                    <tr>
+                        <td>Integración de soluciones tecnológicas</td>
+                        <td>La plataforma responde a las necesidades reales de sus usuarias</td>
+                    </tr>
+                    <tr>
+                        <td>Impulsar el desarrollo económico y social</td>
+                        <td>Ofrecemos a las mujeres emprendedoras un acceso directo al mercado, herramientas de gestión de ventas y una red de apoyo que promueva su empoderamiento económico.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contact" class="row mb-4">
+            <h2>Contacto</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Tu nombre" required autofocus autocomplete="name">
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required autocomplete="email">
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Celular</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Tu número de celular" required autocomplete="tel">
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" id="date" required>
+                </div>
+                <br>
+                <br>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página con derechos reservados -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Bella App. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap para el funcionamiento de componentes interactivos -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

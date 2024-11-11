@@ -1,0 +1,86 @@
+/* Fondo y texto */
+body {
+  background-color: #f2e6f2; /* Fondo */
+  color: #5e2b51; /* Texto  */
+}
+
+header {
+  background-color: #d19cd9; /* Fondo para el encabezado */
+  color: #fff; /* Texto  */
+}
+
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-style: italic; /* Letra cursiva */
+  font-weight: bold; /* Negrita */
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  color: #a95e9c; /* Texto */
+}
+
+main > section {
+  margin-bottom: 40px; /* Mayor espacio entre secciones */
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #c174c7; /* Fondo para los encabezados de la tabla */
+  color: #fff; /* Texto */
+}
+
+table tr:nth-child(even) {
+  background-color: #f7d8e4; /* Fondo rosa claro para filas pares */
+}
+
+/* Hipervínculos */
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #6a2c91; /* Color para los enlaces */
+}
+
+nav a:hover {
+  color: #9e3e9e; /* Color al pasar el mouse */
+}
+
+/* Botón de enviar */
+button {
+  background-color: #8a2c6a; /* Fondo */
+  color: #fff; /* Texto */
+  border: none;
+}
+
+button:hover {
+  background-color: #6a2c91; /* al pasar el mouse */
+}
+
+/* Adaptabilidad para dispositivos */
+@media (max-width: 768px) {
+  header, footer {
+      text-align: center;
+  }
+
+  table, form {
+      width: 100%;
+  }
+}
+
+/* Estilos específicos para imágenes y videos */
+img, video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
